@@ -1,0 +1,192 @@
+[
+  {
+    "id": "p1",
+    "name": "Harald",
+    "tag": "REHAB-KONGEN",
+    "bio": "Harald ser ut som han har full kontroll på både oppvarming, behandlingsplan og julebordstaktikk. I praksis drives kvelden av biceps, høy selvtillit og en litt for stor tro på at strikk løser alt.",
+    "portrait": "participants/p1.png",
+    "aiImage": "participants/avatar_p1.webp",
+    "sceneImage": "participants/scene_p1.webp",
+    "positive": [
+      "Tung rehab-aura",
+      "God på pep talk",
+      "Sterk nok til å flytte benken"
+    ],
+    "negative": [
+      "Null respekt for hviledag",
+      "Tar speilet som fagfelle",
+      "Kan forklare for lenge"
+    ]
+  },
+  {
+    "id": "p2",
+    "name": "Biffen",
+    "tag": "SKUMRULLE-SJEFEN",
+    "bio": "Biffen møter julebordet som om det var en kombinasjon av treningsleir og nachspiel. Nakne fakta drukner i gløgg, selvtillit og en skumrulle pyntet som juletre.",
+    "portrait": "participants/p2.png",
+    "aiImage": "participants/avatar_p2.webp",
+    "sceneImage": "participants/scene_p2.webp",
+    "positive": [
+      "Smittende humør",
+      "Alltid klar for innsats",
+      "Løfter stemningen fort"
+    ],
+    "negative": [
+      "Overtenner etter to enheter",
+      "For glad i egne råd",
+      "Volum uten demping"
+    ]
+  },
+  {
+    "id": "p3",
+    "name": "Odin",
+    "tag": "FJELLFYSIOEN",
+    "bio": "Odin ser ut som om han kom rett fra topptur, men ender alltid opp som kveldens mest entusiastiske behandlingsfilosof. Han er varm i stemmen, kald i beslutningene og farlig positiv til alt.",
+    "portrait": "participants/p3.png",
+    "aiImage": "participants/avatar_p3.webp",
+    "sceneImage": "participants/scene_p3.webp",
+    "positive": [
+      "Optimist deluxe",
+      "God på motivasjon",
+      "Ser sporty ut i alle lys"
+    ],
+    "negative": [
+      "Tror isbad løser alt",
+      "Får nye idéer sent på kvelden",
+      "Forveksler ro med kontroll"
+    ]
+  },
+  {
+    "id": "p4",
+    "name": "Peder",
+    "tag": "RESTITUSJONSORAKELET",
+    "bio": "Peder har funnet julebordets helligste plass: varmt vann, lite ansvar og akkurat passe bekymringsløs puls. Han kaller det restitusjon; alle andre kaller det tidlig avsporing.",
+    "portrait": "participants/p4.png",
+    "aiImage": "participants/avatar_p4.webp",
+    "sceneImage": "participants/scene_p4.webp",
+    "positive": [
+      "Rolig under press",
+      "Sterk badestamp-autoritet",
+      "Holder koken lenge"
+    ],
+    "negative": [
+      "Mistenkelig komfortabel halvnaken",
+      "Utsetter alt til i morgen",
+      "Kan sovne sittende"
+    ]
+  },
+  {
+    "id": "p5",
+    "name": "Jacob",
+    "tag": "MANIPULASJONSENGELEN",
+    "bio": "Jacob ser uskyldig ut, men det er bare emballasjen. Bak glorie, fløyelsjakke og klinisk smil skjuler det seg en mann som kunne solgt bekkenjustering som livsstil.",
+    "portrait": "participants/p5.png",
+    "aiImage": "participants/avatar_p5.webp",
+    "sceneImage": "participants/scene_p5.webp",
+    "positive": [
+      "Sjarmerer alle i senk",
+      "Ser profesjonell ut",
+      "God på å late som han har plan"
+    ],
+    "negative": [
+      "Farlig troverdig",
+      "Litt for glad i egne hender",
+      "Kan flørte med placebo"
+    ]
+  },
+  {
+    "id": "p6",
+    "name": "Geir",
+    "tag": "AKEVITTANSVARLIG",
+    "bio": "Geir styrer servering, stemning og faglig forfall med samme rolige hånd. Han ser ut som kveldens mest ansvarlige, men det er nettopp da du bør begynne å bli nervøs.",
+    "portrait": "participants/p6.png",
+    "aiImage": "participants/avatar_p6.webp",
+    "sceneImage": "participants/scene_p6.webp",
+    "positive": [
+      "Holder orden på glassene",
+      "Trygg i kaos",
+      "Stabil gjennom kvelden"
+    ],
+    "negative": [
+      "Doserer med overmot",
+      "Kan starte dårlig idé med rolig tone",
+      "Lite respekt for moderasjon"
+    ]
+  },
+  {
+    "id": "p7",
+    "name": "Berg",
+    "tag": "HYTTEFYSIOEN",
+    "bio": "Berg oser av ull, trygghet og varm drikke, men har et mørkt talent for å gjøre en rolig kveld unødvendig interessant. Han er kveldens myke mann med hard dømmekraft.",
+    "portrait": "participants/p7.png",
+    "aiImage": "participants/avatar_p7.webp",
+    "sceneImage": "participants/scene_p7.webp",
+    "positive": [
+      "Koselig som få",
+      "God på logistikk rundt hygge",
+      "Stabil varmepute-energi"
+    ],
+    "negative": [
+      "Kan romantisere dårlige valg",
+      "For komfortabel i kaos",
+      "Mildt manipulerende hyttekarisma"
+    ]
+  },
+  {
+    "id": "p8",
+    "name": "Stian",
+    "tag": "TAPEKAPTEINEN",
+    "bio": "Stian behandler både bekken, stolthet og julebord som om alt kan stabiliseres med nok tape og et rolig smil. Det er imponerende helt til han får en ny idé og alle må høre den.",
+    "portrait": "participants/p8.png",
+    "aiImage": "participants/avatar_p8.webp",
+    "sceneImage": "participants/scene_p8.webp",
+    "positive": [
+      "Ser elegant ut i alt",
+      "Hendig med utstyr",
+      "Har kontrollert kaos-vibb"
+    ],
+    "negative": [
+      "Overkompliserer enkle ting",
+      "Snakker bekken når ingen ba om det",
+      "Kan bli høy på egen problemløsning"
+    ]
+  },
+  {
+    "id": "p9",
+    "name": "Trym",
+    "tag": "LOGISTIKKJEFEN",
+    "bio": "Trym ser ut som han kom for å tenne lys, servere gløgg og rydde opp, men ender ofte med å være den som muliggjør kveldens dårligste avgjørelser. Snill fremtoning, katastrofal kapasitet for grenser.",
+    "portrait": "participants/p9.png",
+    "aiImage": "participants/avatar_p9.webp",
+    "sceneImage": "participants/scene_p9.webp",
+    "positive": [
+      "Holder hodet kaldt",
+      "Praktisk anlagt",
+      "Får ting til å flyte"
+    ],
+    "negative": [
+      "Sier ja altfor lett",
+      "Blir fort kveldens enabler",
+      "Rydder opp etter andres dumskap"
+    ]
+  },
+  {
+    "id": "p10",
+    "name": "Dennis",
+    "tag": "MOBILISATØREN",
+    "bio": "Dennis tror fortsatt at alt i verden kan fikses med litt mobilisering, litt strikk og altfor mye selvtillit. Problemet er at han ofte ser så overbevisende ut at folk frivillig legger seg på benken.",
+    "portrait": "participants/p10.png",
+    "aiImage": "participants/avatar_p10.webp",
+    "sceneImage": "participants/scene_p10.webp",
+    "positive": [
+      "Null frykt for tiltak",
+      "Høy treningsfaktor",
+      "Selvtillit i industristørrelse"
+    ],
+    "negative": [
+      "Terskel for å improvisere er farlig lav",
+      "Tar initiativ ingen ba om",
+      "Kan bli for glad i show"
+    ]
+  }
+]

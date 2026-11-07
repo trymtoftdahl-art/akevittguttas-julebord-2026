@@ -1,0 +1,78 @@
+AKEVITTGUTTAS JULEBORD 2026 – START HER
+======================================
+
+INNHOLD
+- index.html + app.js + style.css: Nettsiden.
+- participants/: eksakt de ti deltakerne, originale bilder, gamle avatarer og nye profilvarianter.
+- ill/: fem separate ILL-bilder. Deltakerbildene brukes ALDRI automatisk i ILL.
+- server.js: lokal / serverbasert live-tjeneste uten eksterne pakker.
+- participants.json: låst oversikt over de ti deltakerne.
+
+1) PRØV DEMO UTEN SERVER
+Pakk ut ZIP-filen. Åpne index.html i Safari, Chrome eller Edge.
+Du kan prøve skjema, poeng og arrangørpanelet i egen nettleser.
+Bilder og videoklipp som legges inn i demomodus er kun tilgjengelige i den økten.
+Poeng kan lagres lokalt på enheten. Dette er IKKE deling mellom telefoner.
+
+2) START LIVE-VERSJONEN (NODE.JS 20 ELLER NYERE)
+Åpne en terminal i denne mappen. Installer Node.js 20+ ved behov.
+
+Mac / Linux:
+  ADMIN_PIN="VELG-EN-HEMMELIG-KODE" HOST=0.0.0.0 node server.js
+
+Windows PowerShell:
+  $env:ADMIN_PIN="VELG-EN-HEMMELIG-KODE"
+  $env:HOST="0.0.0.0"
+  node server.js
+
+På datamaskinen åpner du http://localhost:8787.
+Deltakere på samme Wi-Fi åpner http://DIN-LOKALE-IP:8787.
+Du må eventuelt tillate port 8787 i brannmuren.
+De trenger ingen app eller konto. Del lenken / lag en QR-kode.
+
+3) ARRANGØRPANELET
+Åpne «Arrangør» og logg inn med ADMIN_PIN.
+Fanene: Poeng, ILL, Film, Bilder, Stavmikser og Live.
+
+POENG: Åtte konkurrerer og starter med 0: Harald, Biffen, Peder, Jacob, Geir, Berg, Stian og Dennis.
+       Odin og Trym er fortsatt med på deltakersiden, men ikke i poengtabellen.
+       Skriv fritt inn poeng for Stavmikser, ILL, Nest flest og Andre konkurranser.
+       «Rask poengregistrering» lar deg velge deltaker og legge til et vilkårlig
+       antall positive eller negative poeng uten å lage en egen konkurranseside.
+       Skriv eventuelt en kort årsak for å publisere den i Live-feeden.
+       Totalsummen beregnes automatisk av de fire poengfeltene. ILL gir −1 per latter.
+ILL: Åpne «ILL-storskjerm» i egen fane/vindu. Velg fullskjerm.
+     Trykk «Start ILL» på admin-enheten: 30 sekunder med reglene,
+     så fem bildevisninger, 5 sekunder per bilde, uten tekstoverlegg.
+FILM: Last opp klipp som MP4, MOV eller WebM. Flytt dem ↑/↓ i riktig rekkefølge.
+      «Filmstorskjerm» starter én avspilling som automatisk går videre fra klipp til klipp.
+      Dette lager ikke én ny nedlastbar MP4, men en sammenhengende visning.
+      MP4 med H.264-video og AAC-lyd fungerer best på tvers av telefoner.
+NEST FLEST: Viser bare «Mer informasjon kommer» for gjestene inntil du avslører filmen.
+BILDEDELING: Alle som har lenken kan sende inn bilder. Arrangøren kan skjule/slette.
+STAVMIKSER: Gjestene skriver navn og tre ingrediensforslag; admin ser svarene.
+
+4) LAGRING / LIVE
+Med serveren synkroniseres oppdateringer over nettverket.
+Serveren lagrer til .data/state.json og mediefiler i .data/media/.
+Ta backup av .data/. Hvis hosten sletter disken, forsvinner poeng og innsendt materiale.
+Etter at du tester systemet kan du stoppe serveren med Ctrl+C.
+
+5) OFFENTLIG TILGANG UTENFOR SAMME WI-FI
+Trenger en offentlig HTTPS-adresse hos en host med Node-støtte og VARIG DISK,
+eller en omvendt proxy til denne serveren. Dette ZIP-prosjektet er IKKE publisert.
+Bruk en sterk ADMIN_PIN, sett SESSION_SECRET, aktiver HTTPS og begrens tilgangen.
+Standardkoden 2026 er bare for lokal testing og må aldri brukes på internett.
+
+6) PERSONVERN
+Deltakerportretter og innsendte bilder kan bli sett av alle med lenken.
+Del derfor lenken bare med de inviterte; få deltakernes samtykke til publisering.
+Bilder i galleriet vises automatisk etter opplasting og kan fjernes i adminpanelet.
+Ikke legg inn pasientbilder eller opplysninger om virkelige pasienter.
+
+7) OM PORTRETTENE
+Deltakerlisten er IDENTISK med forrige versjon: Harald, Biffen, Odin, Peder,
+Jacob, Geir, Berg, Stian, Trym og Dennis. Ingen av dem er endret.
+De nye bildene er grafisk bearbeidede profilvarianter basert på deres
+originalbilder / tidligere AI-avatarer for å bevare ansiktene. De er IKKE
+helt nye fotorealistiske genereringer i nye kroppspositurer.

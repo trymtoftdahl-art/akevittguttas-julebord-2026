@@ -1,0 +1,12 @@
+AKEVITTGUTTAS JULEBORD 2026 – OPPDATERTE DELTAKERBILDER OG FORSIDE
+
+- Alle 10 deltakere bruker bildene participants/scene_p1.webp til scene_p10.webp.
+- Forsiden har en bildemosaikk med fire deltakere (Harald, Jacob, Berg og Trym).
+- Forsiden har også et bilde av samtlige ti deltakere med navn og rolletittel.
+- Deltakersiden har fortsatt full profiltekst og originalfoto.
+- Alle øvrige konkurranser, live-funksjoner og arrangørpanel er beholdt uendret.
+
+PUBLISERING
+Pakkens innhold lastes opp til GitHub-prosjektet ditt. Railway må deretter
+oppdatere sin Node/Docker-tjeneste. Den eksisterende Railway-demoen er ikke
+automatisk endret ved at ZIP-filen ble laget.

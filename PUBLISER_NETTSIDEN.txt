@@ -1,0 +1,56 @@
+AKEVITTGUTTAS JULEBORD 2026 – NETTSIDEN KLAR FOR PUBLISERING
+============================================================
+
+Dette er DEN NYESTE nettsiden – deltakerprofiler og AI-bilder er beholdt.
+10 deltakere på profilsiden, 8 i poengtabellen. Odin og Trym er ikke med i poengkonkurransene.
+
+ALTERNATIV A – BRUK RAILWAY-APPEN I CHATGPT (ENKLERE)
+1. Koble til Railway-appen som er foreslått i samtalen (den må bekreftes av deg).
+2. Åpne denne samtalen igjen og be om å publisere Akevittguttas julebord.
+3. Oppgi/lag en hemmelig adminpassord via en sikker dialog. IKKE skriv hemmeligheter i offentlig chat.
+4. Sørg for at tjenesten får en varig disk og HTTPS-domene.
+
+ALTERNATIV B – RAILWAY VIA GITHUB
+1. Opprett en privat GitHub-repo og last opp INNHOLDET i denne mappen til roten i repoen.
+   Dockerfile, server.js og index.html må ligge rett i roten av repoen.
+2. Åpne https://railway.com og velg New Project > Deploy from GitHub Repo.
+3. Velg GitHub-repoen med nettsiden. Railway vil oppdage Dockerfile.
+4. Legg til tjenestevariabler:
+     ADMIN_PIN        = en unik hemmelig arrangørkode på MINST 10 tegn (IKKE 2026)
+     SESSION_SECRET   = en lang, tilfeldig hemmelig nøkkel på MINST 32 tegn
+     HOST             = 0.0.0.0
+     NODE_ENV         = production
+   Sett disse i Railway Variables, ikke inn i kildekoden.
+5. Koble til et Railway Volume som monteres på NØYAKTIG /app/.data.
+   Dette er helt nødvendig for varig lagring av resultater, bildedeling og video.
+6. Under Networking: Generate Domain / Public Networking.
+7. Når nettsiden åpnes, logg inn på Arrangør med ADMIN_PIN.
+8. Test poeng fra to forskjellige enheter og opplasting av bilde.
+
+Railway har brukskostnader og volumstørrelse/grenser avhenger av plan.
+Sjekk gjeldende priser før du setter i gang. Vurder backup av volumet.
+
+QR-KODE
+Du trenger den FAKTISKE https://-adressen før QR-koden kan genereres.
+Når adressen er klar kan du for eksempel bruke:
+    python lag_qr.py https://DITT-DOMENE.up.railway.app
+Dette krever installasjon av qrcode for Python (se lag_qr.py).
+
+PERSONVERN
+Hele deltakersiden og godkjente innsendte bilder er tilgjengelige for de som kjenner lenken.
+Del ikke pasientinformasjon. Avklar med deltakerne før du publiserer deres bilder.
+Bruk sikker admin-kode, og del aldri ADMIN_PIN eller SESSION_SECRET med gjestene.
+Bilder i galleriet blir automatisk synlige ved opplasting, men kan skjules av admin.
+
+INNHOLD OG FUNKSJONER
+- Hjem, deltakere, Live, Stavmikser, ILL, Nest flest, Poeng, Bildedeling, Arrangør.
+- 30 sek ILL-regler, deretter ILL-bilder i 5 sek hver, egen bildesamling.
+- Opplastede videoklipp spilles etter hverandre, men samles ikke i en eksportert videofil.
+- Rask poengregistrering og egne poeng for andre konkurranser, pluss og minus.
+- Koden og denne pakken er KLAR FOR OPPLASTING, men nettsiden er IKKE PUBLISERT ennå.
+
+TEKNISK
+- Node.js 22, ingen tredjepartsavhengigheter.
+- HTTP port styres av PORT, standard 8787. I Docker er HOST 0.0.0.0.
+- All varig data ligger i /app/.data (Docker) og blir bevart hvis volumet er montert.
+- /health returnerer et enkelt status-svar for driftsovervåking.
